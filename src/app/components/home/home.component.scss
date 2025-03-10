@@ -1,145 +1,121 @@
- .header{
-    color: red;
-    justify-content: center;
-    display: flex;
-    align-items:center;
-    font-family: 'Times New Roman', Times, serif;
-    
- }
- #prg1{
-    justify-content: center;
-    display: flex;
-    padding: 10px;
-    color:black;
-    font-family: 'Times New Roman', Times, serif;
- }
  
-#bt1,#bt2{
-    
-        padding: 12px 24px;
-        font-size: 18px;
-        color: #fff;
-        background: linear-gradient(135deg, #6e8efb, #a777e3);
-        border: none;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        cursor: pointer;
-        transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    #bt1:hover,#bt2:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
-    }
-
-    #bt1,#bt2:active {
-        transform: translateY(1px);
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    }
-
-    div.btn{
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    #header2{
+.About-Us-Section {
+    padding: 0px;
+    background-color: #f9f9f9;
+  
+    .about-us {
+      margin-bottom: 40px;
+      text-align: center;
+      h2 {
+        font-size: 2.10;
         color: red;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 1.1rem;
+        color:  #555;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .img {
+        margin-top: 20px;
+        box-shadow: inset;
+        img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 20px;
+        }
+      }
     }
-
-    #btn3 {
-         
-        padding: 12px 24px;
-        font-size: 18px;
-        color: #fff;
-        background: linear-gradient(135deg, #6e8efb, #a777e3);
-        border: none;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        cursor: pointer;
-        transition: transform 0.2s, box-shadow 0.2s;
+  
+    .Serving-Industries-Across-Tumakuru,
+    .Our-Service-Areas-in-Tumakuru-Region {
+      margin-bottom: 40px;
+      h3 {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 15px;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        li {
+          font-size: 1.1rem;
+          color: #555;
+          margin-bottom: 10px;
+          position: relative;
+          padding-left: 25px;
+          &:before {
+            content: "•";
+            color: #4caf50;
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
+        }
+      }
     }
-    ul {
-        list-style-type: square;
-    }
-   
-   #header3{
+  
+    .Why-Partner-with-Us-for-Your-IT-Needs {
+      h2 {
+        font-size: 2.5rem;
         color: red;
+        margin-bottom: 20px;
+      }
+      h3 {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 15px;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        li {
+          font-size: 1.1rem;
+          color: #555;
+          margin-bottom: 10px;
+          position: relative;
+          padding-left: 25px;
+          &:before {
+            content: "✔";
+            color: #4caf50;
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
+        }
+      }
     }
-    #prg2{
-        font-family: 'Times New Roman', Times, serif;
-    }
-
-.list1{
-    font-family: 'Times New Roman', Times, serif;
-}
+  
  
-
-.container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 40px;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.service-box {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.service-box:hover {
-    transform: scale(1.05);
-}
-
-.service-box img {
-    width: 100%;
-    border-radius: 5px;
-}
-
-.service-box h3 {
-    color: #333;
-    margin: 15px 0;
-}
-
-.service-box p {
-    color: #555;
-    font-size: 14px;
-    margin: 10px 0;
-}
-
-.service-box a {
-    display: inline-block;
-    margin-top: 10px;
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-}
-
-.service-box a:hover {
-    text-decoration: underline;
-}
-
-footer {
-    
-    color: #161616;
-    padding: 20px;
-    margin-top: 40px;
-}
-
-footer h2 {
-    margin-bottom: 10px;
-}
-
-footer ul {
-    list-style: none;
-    padding: 10px;
-}
-
-footer li {
-    margin: 5px 0;
-}
+    @media (max-width: 768px) {
+      .about-us {
+        h2 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1rem;
+          max-width: 100%;
+        }
+      }
+  
+      .Serving-Industries-Across-Tumakuru,
+      .Our-Service-Areas-in-Tumakuru-Region,
+      .Why-Partner-with-Us-for-Your-IT-Needs {
+        h3 {
+          font-size: 1.8rem;
+        }
+        ul {
+          li {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+  
