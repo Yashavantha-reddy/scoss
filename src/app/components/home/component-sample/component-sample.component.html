@@ -1,3 +1,4 @@
+<section class="main">
 <ng-container [ngTemplateOutlet]="mytemplate"
     [ngTemplateOutletContext]="{details:{header2:'Your Trusted IT Partner in Tumkur',
     paragraph:'Based in Tumkur, we are a team of dedicated IT professionals committed to delivering high-quality services. Our mission is to help businesses thrive in today’s digital era with reliable and innovative IT solutions.'}}">
@@ -8,14 +9,14 @@
 </div>
 
 <ng-container [ngTemplateOutlet]="mytemplate"
-    [ngTemplateOutletContext]="{details:{class:'l1',marker:'dot',header:'Serving Industries Across Tumakuru',
+    [ngTemplateOutletContext]="{details:{class:'list1',marker:'dot',header:'Serving Industries Across Tumakuru',
      list:['Manufacturing Units','Educational Institutions','Healthcare Facilities','Retail Businesses','Professional Services','Small & Medium Enterprises']}}"></ng-container>
 
-<ng-container [ngTemplateOutlet]="mytemplate" [ngTemplateOutletContext]="{details:{class:'l2',marker:'dot',header:'Our Service Areas in Tumakuru Region',
+<ng-container [ngTemplateOutlet]="mytemplate" [ngTemplateOutletContext]="{details:{class:'list2',marker:'dot',header:'Our Service Areas in Tumakuru Region',
     list:['Tumkur City','Sira','Gubbi','Tiptur','Kunigal','Surrounding Industrial Areas']}}"></ng-container>
 
 <ng-container [ngTemplateOutlet]="mytemplate"
-    [ngTemplateOutletContext]="{details:{class:'l3', marker:'tick',header2  :'Why Partner with Us for Your IT Needs?',header:'Local Expertise',
+    [ngTemplateOutletContext]="{details:{class:'list3', marker:'tick',header2  :'Why Partner with Us for Your IT Needs?',header:'Local Expertise',
     list:['Understanding of local business environment','Bilingual support team: 24/7 technical support in Kannada and English','Regular client visits']}}"></ng-container>
 
 
@@ -42,3 +43,4 @@
     </section>
 
 </ng-template>
+</section>

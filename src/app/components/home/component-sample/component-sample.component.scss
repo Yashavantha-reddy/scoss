@@ -1,23 +1,22 @@
-  .img{
+  .img {
     display: flex;
     justify-content: center;
-    img{
-      width:300px;
+
+    img {
+      width: 300px;
       border-radius: 15px;
     }
   }
+
   .about {
     gap: 20px;
-    // padding: 0px;
-    // margin-bottom: 40px;
     text-align: center;
-    // padding: 20px;
     padding: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-  
+
 
     h2 {
       color: red;
@@ -31,18 +30,15 @@
       list-style: none;
       display: flex;
       flex-wrap: wrap;
-      // flex-direction: column;
       gap: 1em;
-      // width: fit-content;
       align-items: center;
       justify-content: center;
 
-      li{
+      li {
         text-align: left;
         border-radius: 10px;
         padding: 1em;
         gap: 1em;
-        // margin-bottom: 15px;
         box-shadow: 0 0 5px 3px rgba($color: #988b8b, $alpha: 0.1);
         display: flex;
         align-items: center;
