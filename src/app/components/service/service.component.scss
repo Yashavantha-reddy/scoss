@@ -1,79 +1,240 @@
 
-$box-shadow-color: rgb(223, 223, 223);
-$box-shadow: 0 0 15px 5px $box-shadow-color;
+// $box-shadow-color: rgb(223, 223, 223);
+// $box-shadow: 0 0 15px 5px $box-shadow-color;
 
 
+// .services-overview-section {
+//   padding: 2em;
+//   margin: 0 1em;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+
+//   h2 {
+//     font-size: 4em;
+//     align-self: center;
+//   }
+
+
+//   .sub-title {
+//     font-size: 1.2rem;
+//     margin: 2em;
+//     align-self: center;
+
+//   }
+
+//   .services {
+//     padding: 1em;
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+//     gap: 30px;
+//     justify-content: center;
+
+//     .service-card {
+//       padding: 3em 1em;
+//       border-radius: 50px;
+//       box-shadow: $box-shadow;
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: space-evenly;
+//       align-items: center;
+//       text-align: center;
+//       gap: 10px;
+
+//       .service-heading {
+//         font-size: 1.3rem;
+//       }
+
+
+//         img{
+//           max-width: 70%;
+//         }
+
+
+//       a {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         background-color: blue;
+//         padding: 0.5em 1em;
+//         border: none;
+//         color: white;
+//         font-size: 1.1em;
+//         text-decoration: none;
+//         border-radius: 10px;
+
+//         span {
+//           padding: 0 1em;
+
+//         }
+
+//         &:hover {
+//           cursor: pointer;
+//         }
+//       }
+//     }
+//   }
+
+
+// }
+// Variables - Coursera-like colors
+$coursera-blue: #0056d2;
+$coursera-dark: #2a2a2a;
+$coursera-gray: #6a6f73;
+$coursera-light-gray: #f5f5f5;
+$white: #ffffff;
+$border-radius: 8px;
+$box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08);
+
+// Mixins
+@mixin coursera-card {
+  background: $white;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+@mixin coursera-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: $coursera-blue;
+  color: $white;
+  padding: 12px 16px;
+  border-radius: $border-radius;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    background-color: darken($coursera-blue, 8%);
+    transform: translateY(-1px);
+  }
+}
+
+// Services Section
 .services-overview-section {
-  padding: 2em;
-  margin: 0 1em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  h2 {
-    font-size: 4em;
-    align-self: center;
+  padding: 64px 0;
+  background-color: $white;
+  
+  .container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 24px;
   }
 
+  h2 {
+    color: $coursera-dark;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 16px;
+  }
 
   .sub-title {
-    font-size: 1.2rem;
-    margin: 2em;
-    align-self: center;
-
+    color: $coursera-gray;
+    font-size: 18px;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 48px;
+    line-height: 1.5;
   }
 
   .services {
-    padding: 1em;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 30px;
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-top: 32px;
 
     .service-card {
-      padding: 3em 1em;
-      border-radius: 50px;
-      box-shadow: $box-shadow;
+      @include coursera-card;
+      padding: 32px;
+      height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-      text-align: center;
-      gap: 10px;
-
-      .service-heading {
-        font-size: 1.3rem;
+      
+      &:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        transform: translateY(-4px);
       }
 
+      .service-heading {
+        color: $coursera-blue;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 16px;
+      }
 
-        img{
-          max-width: 70%;
+      img {
+        width: 56px;
+        height: 56px;
+        margin-bottom: 20px;
+        object-fit: contain;
+      }
+
+      p {
+        color: $coursera-dark;
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 16px;
+        
+        b {
+          color: $coursera-dark;
         }
-
+      }
 
       a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: blue;
-        padding: 0.5em 1em;
-        border: none;
-        color: white;
-        font-size: 1.1em;
-        text-decoration: none;
-        border-radius: 10px;
-
+        @include coursera-button;
+        margin-top: auto;
+        align-self: flex-start;
+        
         span {
-          padding: 0 1em;
-
+          margin-right: 8px;
         }
 
-        &:hover {
-          cursor: pointer;
+        svg {
+          transition: transform 0.2s ease;
+        }
+
+        &:hover svg {
+          transform: translateX(4px);
         }
       }
     }
   }
+}
 
+// Responsive Design
+@media (max-width: 768px) {
+  .services-overview-section {
+    padding: 48px 0;
+    
+    h2 {
+      font-size: 28px;
+    }
+    
+    .sub-title {
+      font-size: 16px;
+      margin-bottom: 32px;
+    }
+    
+    .services {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      
+      .service-card {
+        padding: 24px;
+      }
+    }
+  }
+}
 
+@media (max-width: 480px) {
+  .services-overview-section {
+    padding: 40px 0;
+    
+    h2 {
+      font-size: 24px;
+    }
+  }
 }
