@@ -1,345 +1,4 @@
-// /* SCSS Variables */
-// $primary: #2563eb;
-// $primary-dark: #1d4ed8;
-// $secondary: #f59e0b;
-// $dark: #1e293b;
-// $light: #f8fafc;
-// $gray: #64748b;
-// $success: #10b981;
-// $white: #ffffff;
-// $shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-// $rounded: 0.5rem;
-// $section-padding: 5rem 0;
-// $container-width: 1200px;
-
-// /* Base Styles */
-// * {
-//     margin: 0;
-//     padding: 0;
-//     box-sizing: border-box;
-// }
-
-// body {
-//     font-family: 'Inter', system-ui, -apple-system, sans-serif;
-//     line-height: 1.6;
-//     color: $dark;
-//     background-color: $light;
-// }
-
-// h1, h2, h3, h4 {
-//     line-height: 1.2;
-//     font-weight: 700;
-// }
-
-// p {
-//     color: $gray;
-//     margin-bottom: 1.5rem;
-// }
-
-// img {
-//     max-width: 100%;
-//     height: auto;
-// }
-
-// .container {
-//     width: 100%;
-//     max-width: $container-width;
-//     margin: 0 auto;
-//     padding: 0 1.5rem;
-// }
-
-// section {
-//     padding: $section-padding;
-// }
-
-// /* Button Styles */
-// .btn {
-//     display: inline-block;
-//     padding: 0.75rem 1.5rem;
-//     background-color: $primary;
-//     color: $white;
-//     border: none;
-//     border-radius: $rounded;
-//     font-weight: 600;
-//     text-align: center;
-//     text-decoration: none;
-//     cursor: pointer;
-//     transition: all 0.3s ease;
-//     box-shadow: $shadow;
-
-//     &:hover {
-//         background-color: $primary-dark;
-//         transform: translateY(-2px);
-//     }
-// }
-
-// .btn-outline {
-//     background-color: transparent;
-//     border: 2px solid $primary;
-//     color: $primary;
-
-//     &:hover {
-//         background-color: $primary;
-//         color: $white;
-//     }
-// }
-
-// /* Hero Section */
-// .hero-section {
-//     background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
-//     color: $white;
-//     text-align: center;
-//     padding: 5rem 0;
-//     position: relative;
-//     overflow: hidden;
-
-//     h1 {
-//         font-size: 2.5rem;
-//         margin-bottom: 1.5rem;
-//         max-width: 900px;
-//         margin-left: auto;
-//         margin-right: auto;
-//     }
-
-//     p {
-//         color: rgba(255, 255, 255, 0.9);
-//         font-size: 1.25rem;
-//         max-width: 700px;
-//         margin-left: auto;
-//         margin-right: auto;
-//         margin-bottom: 2.5rem;
-//     }
-// }
-
-// /* Services Section */
-// .our-web-services {
-//     background-color: $white;
-//     text-align: center;
-
-//     h2 {
-//         font-size: 2rem;
-//         margin-bottom: 1rem;
-//         color: $dark;
-//     }
-
-//     > p {
-//         max-width: 700px;
-//         margin-left: auto;
-//         margin-right: auto;
-//         margin-bottom: 3rem;
-//     }
-
-//     .services-grid {
-//         display: grid;
-//         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-//         gap: 2rem;
-//         margin-top: 2rem;
-//     }
-
-//     .service-card {
-//         background-color: $white;
-//         border-radius: $rounded;
-//         padding: 2rem;
-//         box-shadow: $shadow;
-//         text-align: left;
-//         transition: transform 0.3s ease;
-//         border: 1px solid rgba(0, 0, 0, 0.05);
-
-//         &:hover {
-//             transform: translateY(-5px);
-//             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-//         }
-
-//         h3 {
-//             font-size: 1.25rem;
-//             margin-bottom: 1rem;
-//             color: $dark;
-//         }
-//     }
-// }
-
-// /* What Sets Us Apart Section */
-// .our-websites-apart {
-//     background-color: #f1f5f9;
-
-//     h2 {
-//         text-align: center;
-//         font-size: 2rem;
-//         margin-bottom: 1rem;
-//     }
-
-//     h3 {
-//         text-align: center;
-//         color: $primary;
-//         margin-bottom: 3rem;
-//         font-size: 1.5rem;
-//     }
-
-//     .features-grid {
-//         display: grid;
-//         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-//         gap: 2rem;
-//     }
-
-//     .feature-card {
-//         display: flex;
-//         flex-direction: column;
-//         background-color: $white;
-//         border-radius: $rounded;
-//         padding: 2rem;
-//         box-shadow: $shadow;
-//     }
-
-//     .feature-icon {
-//         width: 48px;
-//         height: 48px;
-//         margin-bottom: 1.5rem;
-//         color: $success;
-//     }
-
-//     h4 {
-//         font-size: 1.25rem;
-//         margin-bottom: 1rem;
-//     }
-// }
-
-// /* Contact Section */
-// .start-your-web-project {
-//     background-color: $white;
-//     text-align: center;
-
-//     h2 {
-//         font-size: 2rem;
-//         margin-bottom: 1rem;
-//     }
-
-//     > p {
-//         max-width: 700px;
-//         margin-left: auto;
-//         margin-right: auto;
-//         margin-bottom: 2rem;
-//     }
-
-//     .contact-form {
-//         max-width: 600px;
-//         margin: 0 auto;
-//         background-color: $white;
-//         padding: 2rem;
-//         border-radius: $rounded;
-//         box-shadow: $shadow;
-//         text-align: left;
-
-//         h3 {
-//             margin-bottom: 1.5rem;
-//         }
-//     }
-
-//     .form-group {
-//         margin-bottom: 1.5rem;
-
-//         label {
-//             display: block;
-//             margin-bottom: 0.5rem;
-//             font-weight: 600;
-//             color: $dark;
-//         }
-//     }
-
-//     .form-control {
-//         width: 100%;
-//         padding: 0.75rem 1rem;
-//         border: 1px solid #cbd5e1;
-//         border-radius: $rounded;
-//         font-size: 1rem;
-//         transition: border-color 0.3s ease;
-
-//         &:focus {
-//             outline: none;
-//             border-color: $primary;
-//             box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
-//         }
-//     }
-
-//     textarea.form-control {
-//         min-height: 150px;
-//         resize: vertical;
-//     }
-
-//     .contact-info {
-//         margin-top: 3rem;
-//         text-align: center;
-
-//         h3 {
-//             font-size: 1.5rem;
-//             margin-bottom: 1rem;
-//         }
-
-//         p {
-//             font-size: 1.125rem;
-//             margin-bottom: 0.5rem;
-//         }
-//     }
-// }
-
-// /* Related Services */
-// .related-it-services {
-//     background-color: #f1f5f9;
-//     text-align: center;
-
-//     h2 {
-//         font-size: 2rem;
-//         margin-bottom: 2rem;
-//     }
-
-//     .services-list {
-//         display: flex;
-//         justify-content: center;
-//         flex-wrap: wrap;
-//         gap: 1rem;
-//         margin-bottom: 2rem;
-
-//         li {
-//             background-color: $white;
-//             padding: 0.75rem 1.5rem;
-//             border-radius: 2rem;
-//             box-shadow: $shadow;
-//             transition: all 0.3s ease;
-//             list-style: none;
-
-//             &:hover {
-//                 background-color: $primary;
-//                 color: $white;
-//                 transform: translateY(-2px);
-//             }
-//         }
-//     }
-// }
-
-// /* Responsive Adjustments */
-// @media (max-width: 768px) {
-//     $section-padding: 3rem 0 !global;
-
-//     .hero-section {
-//         h1 {
-//             font-size: 2rem;
-//         }
-
-//         p {
-//             font-size: 1.125rem;
-//         }
-//     }
-// }
-
-// @media (max-width: 480px) {
-//     .hero-section {
-//         padding: 4rem 0;
-
-//         h1 {
-//             font-size: 1.75rem;
-//         }
-//     }
-// }
-// Variables - Coursera-like colors and styles
+ 
 $coursera-blue: #0056d2;
 $coursera-dark: #2a2a2a;
 $coursera-gray: #6a6f73;
@@ -348,8 +7,7 @@ $white: #ffffff;
 $border-radius: 8px;
 $box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08);
 $transition: all 0.3s ease;
-
-// Mixins
+ 
 @mixin coursera-card {
   background: $white;
   border-radius: $border-radius;
@@ -374,7 +32,7 @@ $transition: all 0.3s ease;
   }
 }
 
-// Base Styles
+ 
 .wrapper {
   font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
   color: $coursera-dark;
@@ -433,8 +91,7 @@ p {
   }
 }
 
-// Hero Section
-.hero-section {
+ .hero-section {
   background: linear-gradient(135deg, rgba(0, 86, 210, 0.9), rgba(0, 86, 210, 0.7)), 
               url('https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center;
   background-size: cover;
@@ -462,8 +119,7 @@ p {
     padding: 1rem 2rem;
   }
 }
-
-// Our Web Services
+ 
 .our-web-services {
   background: $white;
   text-align: center;
@@ -501,7 +157,7 @@ p {
   }
 }
 
-// What Sets Us Apart
+ 
 .our-websites-apart {
   background: $coursera-light-gray;
   text-align: center;
@@ -544,7 +200,7 @@ p {
   }
 }
 
-// Contact Section
+ 
 .start-your-web-project {
   background: $white;
   text-align: center;
@@ -605,8 +261,7 @@ p {
     }
   }
 }
-
-// Related Services
+ 
 .related-it-services {
   background: $coursera-light-gray;
   text-align: center;
@@ -636,7 +291,7 @@ p {
   }
 }
 
-// Responsive Adjustments
+ 
 @media (max-width: 768px) {
   h1 {
     font-size: 2rem;

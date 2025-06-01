@@ -1,4 +1,4 @@
-/* SCSS Variables */
+ 
 $primary: #8b5cf6;
 $primary-dark: #7c3aed;
 $secondary: #f59e0b;
@@ -12,8 +12,7 @@ $rounded: 0.5rem;
 $section-padding: 5rem 0;
 $container-width: 1200px;
 
-/* Base Styles */
-.wrapper {
+ .wrapper {
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     line-height: 1.6;
     color: $dark;
@@ -31,8 +30,7 @@ section {
     padding: $section-padding;
 }
 
-/* Button Styles */
-.btn {
+ .btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
     background-color: $primary;
@@ -63,8 +61,7 @@ section {
     }
 }
 
-/* Hero Section */
-.hero-section {
+ .hero-section {
     background: linear-gradient(135deg, #6d28d9 0%, #8b5cf6 100%);
     color: $white;
     text-align: center;
@@ -91,8 +88,7 @@ section {
     }
 }
 
-/* Digital Marketing Services Section */
-.dm-services {
+ .dm-services {
     background-color: $white;
     text-align: center;
 
@@ -142,8 +138,7 @@ section {
     }
 }
 
-/* Why Choose Us Section */
-.why-choose-us {
+ .why-choose-us {
     background-color: #f1f5f9;
     text-align: center;
 
@@ -183,8 +178,7 @@ section {
     }
 }
 
-/* Start Journey Section */
-.start-journey {
+ .start-journey {
     background-color: $white;
     text-align: center;
 
@@ -257,8 +251,7 @@ section {
     }
 }
 
-/* Related Services */
-.related-services {
+ .related-services {
     background-color: #f1f5f9;
     text-align: center;
 
@@ -290,8 +283,7 @@ section {
     }
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
     section {
         padding: 3rem 0;
     }

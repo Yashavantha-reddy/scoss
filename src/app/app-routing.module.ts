@@ -4,6 +4,7 @@ import { AboutComponent, ContactComponent, EventsComponent, GalleryComponent, Ho
 import { DigiComponent } from './components/digital-marketing/digi.component';
 import { WebdesignservicesComponent } from './components/webdesignservices/webdesignservices.component';
 import { ItinfrastructureservicesComponent } from './components/itinfrastructureservices/itinfrastructureservices.component';
+import { ContectFormComponent } from './components/contect-form/contect-form.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'website-development', component: WebdesignservicesComponent },
   { path: 'it-consulting', component: ItinfrastructureservicesComponent },
   { path: 'under-construction', component: UnderConstructionComponent },
+  { path: 'contact-form', component: ContectFormComponent },
   { path: 'home', redirectTo: '' },
   { path: '**', redirectTo: 'under-construction' },
 ];
